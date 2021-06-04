@@ -13,6 +13,8 @@
 		4494C6F3266AC275001F402E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4494C6F1266AC275001F402E /* Main.storyboard */; };
 		4494C6F5266AC278001F402E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4494C6F4266AC278001F402E /* Assets.xcassets */; };
 		4494C6F8266AC278001F402E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4494C6F6266AC278001F402E /* LaunchScreen.storyboard */; };
+		4494C705266AC533001F402E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4494C704266AC533001F402E /* UserModel.swift */; };
+		4494C708266AC6D6001F402E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4494C707266AC6D6001F402E /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4494C6F4266AC278001F402E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4494C6F7266AC278001F402E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4494C6F9266AC278001F402E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4494C704266AC533001F402E /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4494C707266AC6D6001F402E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,10 @@
 		4494C6EA266AC275001F402E /* Alamfire MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				4494C700266AC48A001F402E /* Model */,
+				4494C701266AC491001F402E /* ViewModel */,
+				4494C702266AC49B001F402E /* View */,
+				4494C703266AC4A2001F402E /* Controller */,
 				4494C6EB266AC275001F402E /* AppDelegate.swift */,
 				4494C6ED266AC275001F402E /* SceneDelegate.swift */,
 				4494C6EF266AC275001F402E /* ViewController.swift */,
@@ -65,6 +73,36 @@
 				4494C6F9266AC278001F402E /* Info.plist */,
 			);
 			path = "Alamfire MVVM";
+			sourceTree = "<group>";
+		};
+		4494C700266AC48A001F402E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4494C704266AC533001F402E /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4494C701266AC491001F402E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4494C707266AC6D6001F402E /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4494C702266AC49B001F402E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4494C703266AC4A2001F402E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4494C6F0266AC275001F402E /* ViewController.swift in Sources */,
+				4494C705266AC533001F402E /* UserModel.swift in Sources */,
 				4494C6EC266AC275001F402E /* AppDelegate.swift in Sources */,
+				4494C708266AC6D6001F402E /* UserViewModel.swift in Sources */,
 				4494C6EE266AC275001F402E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
